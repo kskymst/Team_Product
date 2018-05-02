@@ -1,0 +1,2322 @@
+@charset "utf-8";
+
+/* ------------共通部分------------ */
+
+body {
+  font-family: Calibri, 'Seravek', 'Microsoft Sans Serif', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color: rgb(43, 43, 43);
+}
+
+a {
+  cursor: pointer;
+  color: rgb(43, 43, 43);
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.yields {
+  width: 1430px;
+  margin: 0 auto;
+}
+
+
+/*--- headerセクション ---*/
+
+header {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  height: 68px;
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+nav div {
+  width: 33.3%;
+  text-align: center;
+}
+
+.searchButton {
+  border: none;
+}
+
+.searchSection input {
+  border: none;
+  border-bottom: 1px solid rgb(43, 43, 43);
+  width: 190px;
+  height: 40px;
+  font-size: 24px;
+}
+
+.searchSection input:focus {
+  outline: none;
+}
+
+.loginSection {
+  font-size: 22px;
+}
+
+.loginSection p {
+  display: inline;
+}
+
+#login_btn {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.userLogo {
+  margin-right: 8px;
+}
+
+.verticalBar {
+  margin: 0 4px;
+  color: rgb(100, 100, 100);
+}
+
+.cartIcon {
+  margin-left: 32px;
+}
+
+.top-login-wrapper {
+  position: absolute;
+  z-index: 99;
+  top: 40px;
+  right: 15.3%;
+  display: none;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 400px;
+  max-width: 100%;
+  color: white;
+  font-size: 16px;
+  background: rgb(20, 20, 20);
+  height: 320px;
+  text-align: center;
+}
+
+.top-login-wrapper:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 79%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid rgb(20, 20, 20);
+  ;
+}
+
+.block {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  top: -50px;
+  right: 65px;
+  background: black;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.top-login-wrapper h2 {
+  letter-spacing: 2px;
+  border-bottom: 1px solid white;
+  margin: 16px 0;
+}
+
+.top-login-wrapper p {
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}
+
+.top-login-wrapper input {
+  border: 1px solid white;
+  outline: none;
+  margin-left: 10px;
+}
+
+.top-login-wrapper p:nth-of-type(1) {
+  margin-left: 30px;
+}
+
+.top-login-wrapper p:nth-of-type(3) {
+  border-bottom: 1px solid rgba(202, 202, 202, 0.5);
+}
+
+.top-login-wrapper form {
+  margin: 24px 0;
+}
+
+.top-login-wrapper form button {
+  width: 100px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  font-size: 18px;
+  margin: 8px 0 16px 270px;
+}
+
+.top-login-wrapper form button span {
+  margin-right: 10px;
+  vertical-align: -2px;
+}
+
+.login_error{
+  color:red;
+  border-bottom:1px solid red;
+  width:220px;
+}
+
+.top-login-wrapper form button:hover {
+  background: white;
+  color: black;
+}
+
+.top-join a {
+  color: white;
+  border: 1px solid white;
+  padding: 8px;
+  margin-left: 4px;
+}
+
+.top-join a:hover {
+  color: white;
+}
+
+.top_login_after span:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.top_login_after:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.top_cart_quantity {
+  background: rgb(255, 19, 58);
+  color: white;
+  border-radius: 100px;
+  font-size: 14px;
+  padding: 1px 8px;
+  position: absolute;
+  top: -10px;
+  right: -16px;
+}
+
+.top-join a:hover {
+  background-color: white;
+  color: rgb(10, 10, 10);
+}
+
+.header_join{
+  padding:0 5px;
+}
+.header_join:hover{
+  background-color:rgb(43, 43, 43);
+  color: white;
+}
+
+/*--- /headerセクション ---*/
+
+
+/*--- footerセクション ---*/
+
+footer {
+  background: rgb(43, 43, 43);
+  color: white;
+  display: flex;
+  width: 100%;
+}
+
+.footerLeft {
+  border-right: 1px solid white;
+}
+
+.footerLeft {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footerRight {
+  display: flex;
+  width: 50%;
+}
+
+.footerLeft_left {
+  margin: 16px 0 16px 48px;
+}
+
+.footerLeft_left img {
+  margin-bottom: 16px;
+}
+
+.footerLeft_left p {
+  font-size: 16px;
+  margin: 0 0 0 64px;
+  letter-spacing: 0.5px;
+}
+
+.footerLeft_right {
+  margin: auto 16px 16px 0;
+}
+
+.footerLeft_right p:nth-of-type(1) {
+  margin-bottom: 8px;
+}
+
+.footerLeft_right p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.footerLeft_right span {
+  font-size: 40px;
+  margin-left: 8px;
+}
+
+.footerRight_left,
+.footerRight_center {
+  margin: 16px 0 0 64px;
+}
+
+.footerRight_left h3,
+.footerRight_center h3 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.footerRight_left p,
+.footerRight_center p {
+  margin: 0 0 8px 48px;
+  letter-spacing: 1px;
+}
+
+.languages p:nth-of-type(2),
+.languages p:nth-of-type(3) {
+  font-size: 14px;
+}
+
+.footerRight_right {
+  margin: auto 0 0 auto;
+  padding: 0 32px 16px 0;
+}
+
+.footerRight_right p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.footerRight_right span {
+  font-size: 36px;
+  margin-left: 5px;
+}
+
+
+/*--- /footerセクション ---*/
+
+
+/* -------------/共通部分---------------- */
+
+
+/* -----------ECトップページ-------------- */
+
+
+/*---mainセクション ---*/
+
+.mainWrapper {
+  display: flex;
+  height: 400px;
+}
+
+.leftSidebar {
+  width: 20%;
+}
+
+.leftSidebar div {
+  width: 210px;
+  border-top: 1px solid rgb(43, 43, 43);
+}
+
+.leftSidebar ul {
+  list-style: none;
+  font-size: 26px;
+  height: 150px;
+  margin: 32px 0 0 32px;
+  width: 190px;
+  margin-bottom:16px;
+}
+
+.leftSidebar li:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.mainArea {
+  width: 1032px;
+  margin: 0 auto;
+}
+
+#slider {
+  display: none;/*test*/
+  width: 800px;
+  margin: 60px auto 0;
+  padding-bottom: 16px;
+}
+
+.mainVisual {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+}
+
+.subVisual {
+  display: flex;
+  flex-direction: column;
+}
+
+.subVisual img {
+  height: 115.5px;
+}
+
+.rightSidebar {
+  width: 20%;
+}
+
+.right-top {
+  height: 50%;
+  text-align: center;
+  padding-top: 16px
+}
+
+.right-top a {
+  font-size: 40px;
+  padding: 0 5px;
+}
+
+.right-top a:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.right-under {
+  height: 50%;
+  margin-left: 32px;
+}
+
+.right-under div {
+  border-top: 1px solid rgb(43, 43, 43);
+}
+
+.right-under ul {
+  list-style: none;
+  font-size: 26px;
+  margin-left: auto;
+  padding-left: 58px;
+}
+
+.right-under li:hover {
+  width: 100px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+
+/*---/mainセクション ---*/
+
+
+/* ----New Arrivalセクション--- */
+
+.newArrival-wrapper {
+  width: 1340px;
+  margin: 32px auto;
+}
+
+.new-arrival {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-arrival a {
+  display: block;
+}
+
+.newArrival-title {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  margin-bottom: 16px;
+}
+
+.newArrival-title h1 {
+  font-size: 34px;
+  margin: 0;
+  padding-left: 32px;
+}
+
+.new-arrival-item {
+  width: 16.66%;
+}
+
+.new-arrival-item a:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.itemImage {
+  padding-top: 16px;
+}
+
+.itemWord {
+  width: 80%;
+  margin: 8px auto 0;
+  padding-bottom: 4px;
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.itemAuther {
+  font-size: 16px;
+  color: rgb(135, 135, 135);
+  letter-spacing: 0.6px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.itemPrice {
+  text-align: right;
+  font-size: 18px;
+}
+
+
+/* ----/New Arrivalセクション--- */
+
+
+/* ---Categoryセクション--- */
+
+.category-wrapper {
+  width: 1340px;
+  margin: 0 auto;
+}
+
+.categoryTitle {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  margin-bottom: 16px;
+}
+
+.categoryTitle h1 {
+  font-size: 34px;
+  margin: 0;
+  padding-left: 32px;
+}
+
+.categoryItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoryItem {
+  text-align: center;
+  margin: 8px;
+}
+
+.categoryItem a {
+  display: block;
+  width: 300px;
+  height: 200px;
+  border: 5px solid rgb(43, 43, 43);
+}
+
+.categoryItem a:hover {
+  color: white;
+}
+
+.tokyo:hover {
+  background-image: url(../shop_img/tokyo.png);
+}
+
+.kyoto:hover {
+  background-image: url(../shop_img/kyoto.png);
+}
+
+.gokudo:hover {
+  background-image: url(../shop_img/gokudo.png);
+}
+
+.temple:hover {
+  background-image: url(../shop_img/temple.png);
+}
+
+.art:hover {
+  background-image: url(../shop_img/art.png);
+}
+
+.fashion:hover {
+  background-image: url(../shop_img/fashion.png);
+}
+
+.music:hover {
+  background-image: url(../shop_img/music.png);
+}
+
+.other:hover {
+  background-image: url(../shop_img/other.png);
+}
+
+.categoryItem p {
+  font-size: 40px;
+  letter-spacing: 3px;
+  line-height: 190px;
+}
+
+
+/* ---/Categoryセクション--- */
+
+
+/* ---Artistセクション--- */
+
+.artist-wrapper {
+  width: 1340px;
+  margin: 32px auto 0;
+}
+
+.artistTitle {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  margin-bottom: 16px;
+}
+
+.artistTitle h1 {
+  font-size: 34px;
+  margin: 0;
+  padding-left: 32px;
+}
+
+.artistItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artistItem {
+  margin: 8px;
+}
+
+.artistItem a {
+  display: block;
+  width: 500px;
+  height: 250px;
+  border: 10px solid rgb(43, 43, 43);
+}
+
+.artistItem a:hover {
+  color: white;
+}
+
+.artist_1:hover {
+  background-image: url(../shop_img/artist_1.png);
+}
+
+.artist_2:hover {
+  background-image: url(../shop_img/artist_2.png);
+}
+
+.artist_3:hover {
+  background-image: url(../shop_img/artist_3.png);
+}
+
+.artist_4:hover {
+  background-image: url(../shop_img/artist_4.png);
+}
+
+.artistItems p {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 240px;
+  letter-spacing: 2px;
+}
+
+
+/* ---infomationセクション--- */
+
+.infomation-wrapper {
+  width: 1340px;
+  margin: 64px auto;
+}
+
+.infomationTitle {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  margin-bottom: 32px;
+}
+
+.infomationTitle h1 {
+  font-size: 34px;
+  margin: 0;
+  padding-left: 32px;
+}
+
+.infomationContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.infomationContainer h3 {
+  margin: 16px 0;
+}
+
+.infomationLeft,
+.infomationRight {
+  width: 600px;
+}
+
+.shippingTitle p,
+.paymentTitle p {
+  display: inline;
+  font-size: 34px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.shippingInner,
+.paymentInner {
+  display: flex;
+}
+
+.shippingInner p:nth-of-type(1),
+.paymentInner:first-child {
+  width: 60%;
+  font-size: 18px;
+}
+
+.shippingInner p:nth-of-type(2) {
+  width: 40%;
+  font-size: 140px;
+  margin-left: 16px;
+}
+
+.paymentIcons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.paymentIcons_top,
+.paymentIcons_bottom {
+  width: 40%;
+  display: flex;
+}
+
+.paymentIcons_top p,
+.paymentIcons_bottom p {
+  font-size: 52px;
+  margin: 5px;
+}
+
+
+/* ---/infomationセクション--- */
+
+
+/* -----------/ECトップページ----------------- */
+
+
+/* ------------アイテム詳細ページ ----------------*/
+
+.pro-item-wrap {
+  display: flex;
+}
+
+.categoryRoute {
+  margin-left: -32px;
+  color: rgb(100, 100, 100);
+}
+
+.categoryRoute a {
+  color: rgb(100, 100, 100);
+}
+
+.categoryRoute a:hover {
+  color: rgb(43, 43, 43);
+}
+
+.pro-item-area_left {
+  width: 15%;
+  /* position:absolute; */
+}
+
+.pro-item-area_left div {
+  width: 180px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+  padding: 40px 0 0 64px;
+  margin-bottom: 16px;
+}
+
+.pro-item-area_left p {
+  display: inline;
+  font-size: 26px;
+}
+
+.pro-item-area_left a {
+  display: block;
+  font-size: 18px;
+  border-left: 1px solid rgb(43, 43, 43);
+  margin-left: 40px;
+  padding-left: 8px;
+  width: 80px;
+}
+
+.pro-item-area_left a:hover {
+  background: rgb(43, 43, 43);
+  color: white;
+}
+
+.pro-item-area_center {
+  width: 60%;
+}
+
+.item_center_inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+
+
+.item_center_words{
+  position:relative;
+  width:30%;
+  /* margin-left:120px; */
+}
+
+.item_center_image{
+  width:50%;
+  text-align:center;
+  margin-top:24px;
+}
+
+.wishlist_btn{
+  position:absolute;
+  top:-20px;
+  left:100%;
+  font-size:24px;
+  border:1px solid rgb(43, 43, 43);
+  border-radius: 100px;
+  padding:8px;
+}
+
+.wishlist_btn:hover{
+  background:rgb(43, 43, 43);
+  color:white;
+}
+
+.wishlist_btn_check{
+  position:absolute;
+  top:-20px;
+  left:100%;
+  font-size:24px;
+  border:1px solid rgb(43, 43, 43);
+  border-radius: 100px;
+  padding:8px;
+  color:white;
+  background-color:red;
+}
+
+.wishlist_btn_check:hover{
+  background:white;
+  color:red;
+}
+
+
+
+.item_center_inner p {
+  margin-bottom: 3px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.item_center_inner img {
+  margin: 0px;
+  padding-left: 48px;
+}
+
+.item_center_inner h2 {
+  margin-left: -32px;
+}
+
+.item_center_inner select {
+  margin-top: 14px;
+  height: 51px;
+  width: 48px;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 0px;
+  padding: 8px 16px;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  outline: none;
+}
+
+.item_center_inner button {
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: rgb(43, 43, 43);
+  margin-left: 16px;
+}
+
+.item_center_inner button:hover {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+
+.soldout_btn_area{
+  margin:24px 0 28px 100px;
+}
+
+.soldout_btn{
+  display:inline;
+  font-size: 20px;
+  background-color: rgb(43, 43, 43);
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: white;
+}
+
+.item_center_inner span {
+  margin-right: 8px;
+}
+
+.item_icons {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.item_icons i {
+  font-size: 40px;
+  margin-left: 8px;
+}
+
+.item_price {
+  text-align: right;
+}
+
+.review-area {
+  width: 70%;
+  margin: 24px auto 0;
+}
+
+.review-area h4 {
+  font-size: 20px;
+  display: inline-block;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.review_user {
+  display: flex;
+}
+
+.review_user img {
+  border-radius: 1500px;
+}
+
+.review_user h3 {
+  line-height: 60px;
+  width:50%;
+  margin-left:32px;
+  font-size: 24px;
+}
+
+.review_user p {
+  margin: auto 0 0 0;
+}
+
+.review_comment {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.review-area button {
+  display: block;
+  border: 2px solid rgb(43, 43, 43);
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 0 auto;
+  font-size: 24px;
+  outline: none;
+}
+
+.review-area button:hover {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+
+.review-area-inner{
+  max-height:200px;
+  width:100%;
+  overflow: scroll;
+  padding:8px 16px;
+  margin-bottom:40px;
+  /* border:1px solid rgb(225, 225, 225); */
+}
+
+.write_review {
+  margin-top: 16px;
+  display: none;
+}
+
+.write_review p {
+  margin-bottom: 3px;
+}
+
+.write_review textarea {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  resize: none;
+  border: 1px solid rgb(43, 43, 43);
+  outline: none;
+}
+
+.review_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 652px;
+}
+
+.review_bottom span {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.review_bottom button {
+  width: 150px;
+  font-size: 24px;
+  margin: 0 0 0 auto;
+}
+
+.review_bottom select {
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 0px;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  outline: none;
+}
+
+.pro-item-area_right {
+  width: 25%;
+  margin-top: 64px;
+}
+
+.pro-item-area_right h4:nth-of-type(2) {
+  text-align: right;
+  padding-right: 32px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.other-works-item {
+  width: 300px;
+  overflow: hidden;
+}
+
+.other-works-item a {
+  display: flex;
+}
+
+.other-works-item a:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.ow-img {
+  margin: auto 0 auto 12px;
+}
+
+.ow-info {
+  width: 66.66%
+}
+
+.ow-info p {
+  margin: 0 0 0 16px;
+}
+
+.ow-info p:nth-of-type(1) {
+  font-size: 20px;
+}
+
+.ow-info p:nth-of-type(3) {
+  text-align: right;
+  margin-right: 48px;
+}
+
+.ow-genre-wrapper {
+  width: 1300px;
+  margin: 80px auto 16px;
+}
+
+.ow-genre-title {
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.ow-genre-title h3 {
+  font-size: 32px;
+  margin-left: 16px;
+}
+
+.ow-genre-items {
+  display: flex;
+}
+
+.genre-item {
+  width: 16.66%;
+  margin: 16px auto;
+}
+
+.genre-item img {
+  padding-top: 16px;
+}
+
+.genre-item:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.genre-item a:hover {
+  color: white;
+}
+
+.genre-item p {
+  margin: 3px 0 0 16px;
+}
+
+.genre-item p:nth-of-type(1) {
+  font-size: 20px;
+}
+
+.genre-item p:nth-of-type(3) {
+  width: 80%;
+  text-align: right;
+}
+
+.view-more {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* ------------アイテム詳細ページ ----------------*/
+
+
+/* -------------検索結果ページ-------------- */
+
+.result_main_section {
+  width: 1200px;
+  margin-bottom: 64px;
+  min-height: 505px;
+}
+
+.result_page_wrapper {
+  display: flex;
+}
+
+.result_main_title {
+  text-align: center;
+  margin: 64px 0;
+}
+
+.result_main_title span {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.question {
+  display: inline;
+  padding: 0 8px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.result-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-items {
+  width: 185px;
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+.result-items:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.result-items a:hover {
+  color: white;
+}
+
+.result-item img {
+  padding-bottom: 8px;
+}
+
+.result-item p {
+  margin: 0 8px 0;
+}
+
+.result-item p:nth-of-type(1) {
+  font-size: 20px;
+}
+
+.result-item p:nth-of-type(3) {
+  text-align: right;
+}
+
+.result-item p:nth-of-type(5) {
+  font-size: 20px;
+}
+
+
+/* -------------/検索結果ページ-------------- */
+
+
+/* ------------カートページ-------- */
+
+.cart_page_title {
+  width: 450px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+  margin: 24px 0 32px;
+}
+
+.cart_page_title img {
+  margin: 0 20px 12px 0;
+}
+
+.cart_page_title h1 {
+  margin-left: 110px;
+  display: inline;
+}
+
+.my_cart_wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.thead th:nth-of-type(1) {
+  width: 140px;
+}
+
+.cart_item_title {
+  width: 500px;
+}
+
+.cart_item_image {
+  width: 120px;
+  text-align: center;
+}
+
+.cart_item_title img {
+  margin: 7px 0 0 16px;
+}
+
+.cart_item_title a {
+  display: flex;
+}
+
+.cart_item_title a:hover {
+  background: rgb(43, 43, 43);
+  color: white;
+}
+
+.cart_item_title p {
+  margin: 0 0 0 32px;
+}
+
+.cart_item_title p:nth-of-type(1) {
+  font-size: 24px;
+}
+
+.cart_item_title p:nth-of-type(3) {
+  margin-left: 150px;
+}
+
+.cart_item_title p:nth-of-type(4) {
+  font-size: 20px;
+}
+
+.cart_item_title p:nth-of-type(4) span {
+  margin-right: 5px;
+}
+
+.cart_item_price,
+.cart_item_amount {
+  font-size: 20px;
+  /* border-right:1px solid rgb(135, 135, 135); */
+}
+
+.my_cart_wrapper select {
+  margin-top: 14px;
+  height: 40px;
+  width: 52px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 0px;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  outline: none;
+}
+
+.cart_item_count form {
+  margin-top: 24px;
+}
+
+.cart_item_amount {
+  line-height: 120px;
+}
+
+.cart_trashBtn {
+  font-size: 40px;
+  border: 1px solid rgb(43, 43, 43);
+  margin-top: 36px;
+}
+
+.cart_trashBtn:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.cart-nothing {
+  font-size: 32px;
+  text-align: center;
+  margin: 120px 0;
+}
+
+.total-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.total-wrap p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.cart_total_quantity {
+  margin-right: 40px;
+}
+
+.cart_total_amount_wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.cart_total_inner p {
+  text-align: right;
+}
+
+.total_amount_taxes {
+  margin-top: 24px;
+  font-size: 18px;
+  text-align: right;
+}
+
+.total_amount_taxes p {
+  margin-bottom: 3px;
+}
+
+.total_amount_taxes p:nth-of-type(3) {
+  display: inline;
+  font-size: 32px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.total_amount_taxes a {
+  text-align: right;
+}
+
+.cart_checkout_btn {
+  padding: 5px 8px;
+  font-size: 32px;
+  border: 2px solid rgb(43, 43, 43);
+}
+
+.cart_checkout_area a:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.cart_checkout_btn span {
+  font-size: 26px;
+  margin-right: 8px;
+}
+
+.cart_checkout_area {
+  text-align: right;
+  margin-top: 24px;
+}
+
+
+/* ------------/カートページ-------- */
+
+
+/* ----------チェックアウトページ---------- */
+
+.cart_titles {
+  position: relative;
+}
+
+.cart_page_title i {
+  margin: 0 16px 0 30px;
+}
+
+.checkout_back_btn a {
+  border: 1px solid rgb(43, 43, 43);
+  font-size: 18px;
+  padding: 4px 8px;
+  position: absolute;
+  top: 70%;
+  right: 8%;
+}
+
+.checkout_back_btn a:hover {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+
+.checkout_back_btn span {
+  margin-right: 8px;
+}
+
+.checkout-main-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.checkout-shipping input {
+  border: 1px solid rgb(43, 43, 43);
+  width: 465px;
+  outline: none;
+  margin-left: 32px;
+}
+
+.checkout-shipping p:nth-of-type(1) {
+  position: absolute;
+  top: 40px;
+  left: -160px;
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.checkout_subtitle_1 {
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.checkout_subtitle_1 h3 {
+  margin: 0 0 0 16px;
+}
+
+.checkout-shipping {
+  padding: 0 auto;
+  margin-bottom: 56px;
+  position: relative;
+}
+
+.checkout-shipping td {
+  font-size: 20px;
+}
+
+.checkout-shipping table tr {
+  text-align: right;
+}
+
+.checkout-shipping-select {
+  text-align: left;
+}
+
+.checkout-shipping-select select {
+  margin-top: 14px;
+  height: 40px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 0px;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  outline: none;
+  margin-left: 32px;
+}
+
+.checkout-shipping-table tr {
+  border-top: 24px solid transparent;
+}
+
+.checkout_payment_inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.checkout_payment_inner p:nth-of-type(1) {
+  font-size: 24px;
+}
+
+.checkout-radio-btn label {
+  font-size: 20px;
+  margin: 0;
+  padding: 0 0 8px 8px;
+  cursor: pointer;
+}
+
+.checkout-radio-btn span {
+  font-size: 40px;
+}
+
+.checkout-radio-btn input {
+  cursor: pointer;
+}
+
+.checkout-radio-btns {
+  display: flex;
+  text-align: center;
+}
+
+.checkout-radio-btn {
+  margin-left: 32px;
+}
+
+#checkout-icons {
+  font-size: 32px;
+  padding-top: 4px;
+}
+
+.checkout-cardtype {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.checkout-cardtype p:nth-of-type(1) {
+  font-size: 24px;
+  margin-right: 32px;
+}
+
+.checkout-cardtype input {
+  cursor: pointer;
+}
+
+.checkout-cardtype label {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.checkout-cardtype span {
+  margin-right: 8px;
+  padding-left: 10px;
+  vertical-align: -6px;
+}
+
+.cardtype_radioBtn_1 input:nth-of-type(2) {
+  margin-left: 32px;
+}
+
+.cardtype_radioBtn_2 input:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+.checkout-cardnumber {
+  margin-left: 264px;
+}
+
+.checkout-cardnumber input {
+  width: 250px;
+  border: 1px solid rgb(43, 43, 43);
+  outline: none;
+}
+
+.checkout-cardnumber td {
+  font-size: 18px;
+}
+
+.checkout-cardnumber tr {
+  border-top: 12px solid transparent;
+}
+
+.checkout-cardnumber select {
+  height: 32px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 0px;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  outline: none;
+}
+
+.checkout-cardnumber table tr td:nth-of-type(1) {
+  text-align: right;
+  padding-right: 32px;
+}
+
+.checkout-cardnumber button {
+  border: 2px solid rgb(43, 43, 43);
+  width: 500px;
+  height: 40px;
+  padding: 0;
+  font-size: 24px;
+  margin-top: 80px;
+}
+
+.checkout-cardnumber button:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.privacyContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+}
+
+.privacyLeft {
+  width: 700px;
+}
+
+.prybacyInner {
+  width: 520px;
+  font-size: 18px;
+  margin-top: 32px;
+}
+
+.fa-eye-slash {
+  font-size: 200px;
+  /* margin-left:100px; */
+}
+
+.paypal_btn {
+  text-align: center;
+  margin-top: 32px;
+  position: relative;
+}
+
+.paypal_btn img {
+  border-radius: 16px;
+}
+
+.paypal_btn img:nth-of-type(2) {
+  position: absolute;
+  bottom: 4px;
+  left: 353px;
+  cursor: pointer;
+}
+
+.credit_pattern_2 button,
+.credit_pattern_3 button {
+  border: 2px solid rgb(43, 43, 43);
+  width: 500px;
+  height: 40px;
+  padding: 0;
+  font-size: 24px;
+  margin-top: 56px;
+}
+
+.credit_pattern_2 button:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.credit_pattern_3 button:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.credit_pattern_2,
+.credit_pattern_3 {
+  text-align: center;
+}
+
+#confirm,
+.credit_pattern_2,
+.credit_pattern_3 {
+  display: none;
+}
+
+
+/* ----------/チェックアウトページ---------- */
+
+
+/* --------------confirmページ ----------- */
+
+.confirm_myitem_wrapper {
+  margin-top: 40px;
+}
+
+#table {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#table td {
+  vertical-align: middle;
+}
+
+.confirm_item_titles {
+  display: flex;
+  /* justify-content:; */
+}
+
+.confirm-item-title p {
+  margin: 0;
+}
+
+.confirm-item-title p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.confirm-item-title p:nth-of-type(3) {
+  margin-left: 80px;
+}
+
+.confirm_item_count p {
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  border-left: 1px solid rgb(151, 151, 151);
+  border-right: 1px solid rgb(151, 151, 151);
+  line-height: 60px;
+  margin: 0;
+}
+
+.confirm_item_amount {
+  line-height: 60px;
+  /* font-size: 20px; */
+  padding-left: 120px;
+}
+
+.confirm_total_quantity {
+  margin-right: 32px;
+}
+
+.confirm_amount_taxes {
+  margin-top: 24px;
+}
+
+.confirm_amount_taxes p {
+  margin: 0;
+}
+
+.confirm_amount_taxes p:nth-of-type(3) {
+  font-size: 24px;
+}
+
+.confirm_address {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 80px;
+}
+
+.confirm_address h3 {
+  width: 500px;
+  font-size: 24px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.confirm_shipping_area,
+.confirm_payment_area {
+  margin: 0 30px;
+}
+
+.shipping_table td,
+.payment_table td {
+  font-size: 20px;
+}
+
+.shipping_table tr td:nth-of-type(1),
+.payment_table tr td:nth-of-type(1) {
+  text-align: right;
+  padding-right: 16px;
+}
+
+.confirm_submitBtn {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid rgb(43, 43, 43);
+  background: none;
+  font-size: 28px;
+  margin-bottom: 120px;
+}
+
+.confirm_submitBtn:hover {
+  background: rgb(43, 43, 43);
+  color: white;
+}
+
+
+/* --------------/confirmページ ----------- */
+
+
+/*------------- order completeページ------------- */
+
+.complete_wrapper h1 {
+  width: 350px;
+  margin: 110px auto 0;
+  text-align: center;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.complete_main {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.complete_main div:nth-of-type(1) p {
+  font-size: 124px;
+}
+
+.complete_main div:nth-of-type(2) p {
+  font-size: 24px;
+  margin-bottom: 0;
+  padding-left: 64px;
+}
+
+.complete_backBtn {
+  margin: 80px 0 100px 900px;
+}
+
+.complete_backBtn a {
+  border: 2px solid rgb(43, 43, 43);
+  font-size: 24px;
+  padding: 4px 10px;
+}
+
+.complete_backBtn a:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.complete_backBtn span {
+  margin-right: 10px;
+}
+
+
+/*------------- /order completeページ------------- */
+
+
+/*------------- Artistページ------------- */
+
+.category_main_top {
+  display: flex;
+}
+
+.category_main_image {
+  margin: 80px 0 0 90px;
+}
+
+.artist_main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist_main_left {
+  width: 1000px;
+  margin: 32px 0 0 64px;
+}
+
+.artist_main_title {
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.artist_page_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.artist_page_item {
+  width: 20%;
+}
+
+.artist_page_item a {
+  display: block;
+  height: 100%;
+}
+
+.artist_page_item img {
+  padding-top: 16px;
+}
+
+.artist_page_item p {
+  margin: 0 0 0 16px;
+}
+
+.artist_page_item p:nth-of-type(3) {
+  text-align: right;
+  padding-right: 32px;
+}
+
+.artist_page_item p:nth-of-type(5) {
+  font-size: 20px;
+}
+
+.artist_page_item p:nth-of-type(5) span {
+  margin-right: 5px;
+}
+
+.artist_page_item p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 10px 8px;
+}
+
+.artist_page_item a:hover {
+  color: white;
+}
+
+.artist_page_item:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.artist_pagenation {
+  text-align: center;
+  margin: 88px 0;
+}
+
+.artist_pagenation button {
+  font-size: 20px;
+  border: 1px solid rgb(43, 43, 43);
+  background: none;
+  width: 40px;
+  height: 40px;
+}
+
+.artist_pagenation button:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.category_ranking {
+  padding-left: 16px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+#category_ranking_area {
+  padding-top: 48px;
+}
+
+.ranking_int {
+  font-size: 28px;
+  margin: auto 0 auto 8px;
+}
+
+
+/*------------- /Artistページ------------- */
+
+
+/*------------- ユーザー登録ページ------------- */
+
+.register_page_title {
+  width: 450px;
+  border-bottom: 1px solid rgb(43, 43, 43);
+  margin: 24px 0 32px;
+}
+
+.register_page_title h1 {
+  margin-left: 100px;
+}
+
+.register_page_title h1 i {
+  margin-right: 10px;
+}
+
+.register_main_wrapper {
+  margin-left: 330px;
+}
+
+.register_table tr {
+  border-top: 24px solid transparent;
+}
+
+.register_main_wrapper button {
+  border: 1px solid rgb(43, 43, 43);
+  font-size: 24px;
+  margin: 40px 0 0 470px;
+}
+
+.register_main_wrapper button:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.register_main_wrapper span {
+  margin-right: 10px;
+}
+
+
+/*------------- /ユーザー登録ページ------------- */
+
+
+/*------------- ユーザー編集ページ------------- */
+
+.edit_account_btn {
+  border: 1px solid rgb(43, 43, 43);
+  font-size: 24px;
+  margin: 0 0 150px 0;
+}
+
+.edit_back_btn {
+  border: 1px solid rgb(43, 43, 43);
+  font-size: 24px;
+  margin: 0 20px 150px 770px;
+  cursor: pointer;
+}
+
+.edit_back_btn:hover,
+.edit_account_btn:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+
+/*------------- /ユーザー編集ページ------------- */
+
+
+/*------------- ユーザーマイページ------------- */
+
+.mypage_top,
+.mypage_bottom {
+  display: flex;
+}
+
+.mypage_top_left {
+  width: 50%;
+}
+
+.mypage_top_right {
+  width: 50%;
+}
+
+.mypage_tl_inner,
+.mypage_bl_inner {
+  height: 80%;
+  width: 97%;
+  margin: 32px 0;
+  border-right: 1px solid rgb(135, 135, 135);
+}
+
+.mypage_top_left {
+  text-align: center;
+}
+
+.mypage_top_left p {
+  color: rgb(135, 135, 135);
+  margin: 0;
+}
+
+.mypage_top_left table {
+  margin: 18px auto 24px;
+  font-size: 24px;
+}
+
+.mypage_top_left a {
+  border: 1px solid rgb(43, 43, 43);
+  font-size: 24px;
+  padding: 3px 10px;
+  margin-left: 200px;
+}
+
+.mypage_top_left a:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.mypage_top_left a span {
+  margin-right: 10px;
+}
+
+.mypage_top_right h2 {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  width: 180px;
+}
+
+.top_right_pagenation {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.top_right_pagenation button {
+  width: 36px;
+  font-size: 20px;
+  border: 1px solid rgb(43, 43, 43);
+}
+
+.top_right_pagenation button:hover {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+
+.mypage_bottom_left {
+  width: 50%;
+  padding-left: 24px;
+}
+
+.mypage_bottom_right {
+  width: 50%;
+  margin-bottom:40px;
+}
+
+.mypage_bottom_left h2 {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  width: 250px;
+}
+
+.mypage_bottom_right h2 {
+  border-bottom: 1px solid rgb(43, 43, 43);
+  width: 120px;
+}
+
+
+
+
+.mypage_wishlist_item {
+  width: 20%;
+  margin-bottom:32px;
+}
+
+.mypage_wishlist_item a {
+  display: block;
+  height: 100%;
+}
+
+.mypage_wishlist_item img {
+  padding-top: 16px;
+}
+
+.mypage_wishlist_item p {
+  margin: 0 0 0 16px;
+}
+
+.mypage_wishlist_item p:nth-of-type(3) {
+  text-align: right;
+  padding-right: 32px;
+}
+
+.mypage_wishlist_item p:nth-of-type(5) {
+  font-size: 20px;
+}
+
+.mypage_wishlist_item p:nth-of-type(5) span {
+  margin-right: 5px;
+}
+
+.mypage_wishlist_item p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px 0 10px 8px;
+}
+
+.mypage_wishlist_item a:hover {
+  color: white;
+}
+
+.mypage_wishlist_item a:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.mypage_cart_section{
+  text-align:right;
+}
+
+.mypage_cart_btn{
+  border:1px solid rgb(43, 43, 43);
+  background-color: none;
+  font-size:20px;
+}
+
+.mypage_cart_btn span{
+  margin-right:5px;
+}
+
+.mypage_cart_btn:hover{
+  background-color:rgb(43, 43, 43);
+  color:white;
+}
+
+.mypage_cart_btn_sold{
+  display:inline;
+  background-color: rgb(43, 43, 43);
+  color:white;
+  font-size:20px;
+  padding: 7px 16px;
+}
+
+.mypage_cart_btn_sold span{
+  margin-right:8px;
+}
+
+.item_thumbnails {
+  text-align: center;
+}
+
+.item_thumbnails img {
+  padding:8px;
+}
+
+.add_user_image{
+  font-size:18px;
+  padding:4px;
+  margin-top:16px;
+  cursor: pointer;
+}
+
+.add_user_image:hover{
+  background:rgb(43, 43, 43);
+  color:white;
+}
+
+.add_user_image span{
+  margin-right:5px;
+}
+
+
+/*------------- /ユーザーマイページ------------- */
+
+/* -----ページネーションCSS---- */
+.selection {display: none;}
+.selection10 {display: none;}
+.selection12 {display: none;}
+.selection4 {display: none;}
+.selection2 {display: none;}
+
+#paging_item_1 { display: block;}
+#paging_item_2 { display: block;}
+#paging_item_3 { display: block;}
+
+#paging_item4_1 { display: block;}
+#paging_item4_2 { display: block;}
+#paging_item4_3 { display: block;}
+#paging_item4_4 { display: block;}
+
+#paging_item2_1 { display: block;}
+#paging_item2_2 { display: block;}
+#paging_item2_3 { display: block;}
+#paging_item2_4 { display: block;}
+
+#paging_item10_1 { display: block;}
+#paging_item10_2 { display: block;}
+#paging_item10_3 { display: block;}
+#paging_item10_4 { display: block;}
+#paging_item10_5 { display: block;}
+#paging_item10_6 { display: block;}
+#paging_item10_7 { display: block;}
+#paging_item10_8 { display: block;}
+#paging_item10_9 { display: block;}
+#paging_item10_10 { display: block;}
+
+#paging_item12_1 { display: block;}
+#paging_item12_2 { display: block;}
+#paging_item12_3 { display: block;}
+#paging_item12_4 { display: block;}
+#paging_item12_5 { display: block;}
+#paging_item12_6 { display: block;}
+#paging_item12_7 { display: block;}
+#paging_item12_8 { display: block;}
+#paging_item12_9 { display: block;}
+#paging_item12_10 { display: block;}
+#paging_item12_11 { display: block;}
+#paging_item12_12 { display: block;}
+
+
+#paging ul{
+  display:flex;
+  color:rgb(43, 43, 43);
+  list-style: none;
+  justify-content: center;
+  margin-top:32px;
+}
+
+#paging li{
+  width:40px;
+  height:40px;
+  color:rgb(43, 43, 43);
+  margin-left:10px;
+}
+
+#paging  a{
+  width:40px;
+  border:1px solid rgb(43, 43, 43);
+  height:40px;
+  color:rgb(43, 43, 43);
+  text-align: center;
+}
+
+#paging10 ul,#paging12 ul,#paging4 ul,#paging2 ul{
+  display:flex;
+  justify-content: center;
+  color:rgb(43, 43, 43);
+  list-style: none;
+  margin:32px 0 32px;
+}
+
+#paging10 li,#paging12 li,#paging4 li,#paging2 li{
+  width:40px;
+  height:40px;
+  color:rgb(43, 43, 43);
+  margin-left:10px;
+}
+
+#paging10 a,#paging12 a,#paging4 a,#paging2 a{
+  width:40px;
+  border:1px solid rgb(43, 43, 43);
+  height:40px;
+  color:rgb(43, 43, 43);
+  text-align: center;
+}
+
+
+.active{
+  background:rgb(43, 43, 43);
+  text-align: center;
+  line-height: 40px;
+}
+.active span{
+  color:white;
+}
+
+.next,.prev{
+  display:none;
+}
+
+
+
+/* -----/ページネーションCSS---- */
+
