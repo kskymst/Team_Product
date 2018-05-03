@@ -17,9 +17,10 @@
 
 ## Language
 
-[デザイン] Sketch
-[フロントエンド] HTML, CSS, Javascript, jQuery
-[バックエンド] Laravel
+**[デザイン]** Sketch  
+**[フロントエンド]** HTML, CSS, Javascript, jQuery  
+**[バックエンド]** Laravel  
+**[チーム共有]**  Sourcetree, bitbacket
 
 ## Created date
 
