@@ -1,28 +1,26 @@
 # Team_Product
 
-![audio_analyzer](https://user-images.githubusercontent.com/33841025/39551087-98dd15de-4e9e-11e8-8e18-60e4f7b0b3b6.gif)
-
-※実際はもっと滑らかに動きます:)
+![team_product](https://user-images.githubusercontent.com/33841025/39568879-98f82224-4efe-11e8-8300-97dff20e39f5.gif)
 
 ## Description
 
-音楽の音量、周波数帯域を可視化できます
+チーム制作にて海外向けの日本のアート本通販サイトをイメージし一通りの流れを実装しました。
+企画、フロントエンド、バックエンド×２の4人のチームで構成。
+自分は全てのフロントエンド部分(デザイン、HTML、CSS、Javascript)を担当。
 
+・実際に購入までできますが、もちろんワークしているプロダクトではないので、全てシミュレーションです。決済処理も実際には行われません。
 
 ## Demo
 
-[DEMO](http://yamashita-ksk.sakura.ne.jp/canvas/AudioAnalyzer.html)
+[DEMO](http://ippeikamimura.sakura.ne.jp/okty/public/booquet)
 
-
-
-## Usage
-
-音楽ファイル(mp3 or wav)をインポート後、画面下部のスライダーでフォーカス幅を調整できます。  
 
 ## Language
 
-HTML(CANVAS), CSS, Javascript(Web Audio API)
+[デザイン] Sketch
+[フロントエンド] HTML, CSS, Javascript, jQuery
+[バックエンド] Laravel
 
 ## Created date
 
-2017/11/19
+2017/12/19 〜 2018/1/9
