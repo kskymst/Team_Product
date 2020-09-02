@@ -21,7 +21,3 @@
 **[フロントエンド]** HTML, CSS, Javascript, jQuery  
 **[バックエンド]** Laravel  
 **[チーム共有]**  Sourcetree, bitbacket
-
-## Created date
-
-2017/12/19 〜 2018/1/9
